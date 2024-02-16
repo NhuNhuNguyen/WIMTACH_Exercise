@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using MyCollegeV1.Models;
@@ -20,6 +21,8 @@ namespace MyCollegeV1.Students.Dto
         public DateTime CreationTime { get; set; }
 
         public long? CreatorUserId { get; set; }
+
+        public Guid CollegeRefId { get; set; }
 
     }
 }

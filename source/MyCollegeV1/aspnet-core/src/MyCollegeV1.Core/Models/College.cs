@@ -39,5 +39,7 @@ namespace MyCollegeV1.Models
         public string NguyenReasonDescription { get; set; }
 
         public bool IsSleep { get; set; }
+
+        public ICollection<Student> Student { get; set; }
     }
 }

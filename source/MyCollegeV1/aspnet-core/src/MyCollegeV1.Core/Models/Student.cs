@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
@@ -24,6 +25,11 @@ namespace MyCollegeV1.Models
         public string DoB { get; set; }
 
         public bool IsActive { get; set; }
+
+        public Guid CollegeRefId { get; set; }
+
+        [ForeignKey("CollegeRefId")]
+        public College College { get; set; }
 
     }
 }

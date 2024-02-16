@@ -1,6 +1,7 @@
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using MyCollegeV1.Models;
+using System;
 
 namespace MyCollegeV1.Students.Dto
 {
@@ -14,7 +15,8 @@ namespace MyCollegeV1.Students.Dto
         public string ProgramName { get; set; }
         public string DoB { get; set; }
         public bool IsActive { get; set; }
-///UpdateDto.cs.fields1///
+
+        public Guid CollegeRefId { get; set; }
 
     }
 }
